@@ -58,7 +58,7 @@ fun convertNumericQualityToString(quality: Int, resources: Resources): String {
 @SuppressLint("SimpleDateFormat")
 fun convertLongToDateString(systemTime: Long): String {
     return SimpleDateFormat("EEEE MMM-dd-yyyy' Time: 'HH:mm")
-        .format(systemTime).toString()
+            .format(systemTime).toString()
 }
 
 /**
@@ -103,3 +103,4 @@ fun formatNights(nights: List<SleepNight>, resources: Resources): Spanned {
         return HtmlCompat.fromHtml(sb.toString(), HtmlCompat.FROM_HTML_MODE_LEGACY)
     }
 }
+
